@@ -114,6 +114,36 @@
   height: 1em;
 }
 
+.login h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.login input {
+  height: 30px;
+  width: 100%;
+}
+
+.login button {
+  width: 100%;
+  border: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 1s;
+  font-weight: 100;
+}
+
+.login button:hover {
+  background: #111;
+  color: #fff;
+}
+
+.textcenter {
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
