@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Dashboard(props) {
 
-  if(!props.data.data){
+  if(!props.data){
     return(
       <div>
         <p>
@@ -15,7 +15,7 @@ export default function Dashboard(props) {
     )
   };
   
-  console.log(props);
+  console.log(props.data);
 
   return (
     <Layout>
@@ -24,16 +24,26 @@ export default function Dashboard(props) {
           <h2>DASHBOARD</h2>
           <hr/>
           <table style={{'width':'90%'}}>
+            <thead>
             <tr>
               <th>BTC</th>
               <th>ETH</th>
               <th>XRP</th>
             </tr>
-            <tr>
-              {props.data.data.map(type => (
-                <td>Centro comercial Moctezuma</td>
-              ))}
-            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h1>$ {props.data.BTC.USD}</h1>
+                </td>
+                <td>
+                  <h1>$ {props.data.ETH.USD}</h1>
+                </td>
+                <td>
+                  <h1>$ {props.data.XRP.USD}</h1>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
