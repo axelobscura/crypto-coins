@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Dashboard(props) {
 
-  if(!props){
+  if(!props.data.data){
     return(
       <div>
         <p>
@@ -14,6 +14,8 @@ export default function Dashboard(props) {
       </div>
     )
   };
+  
+  console.log(props);
 
   return (
     <Layout>
@@ -28,7 +30,7 @@ export default function Dashboard(props) {
               <th>XRP</th>
             </tr>
             <tr>
-              {props.map(type => (
+              {props.data.data.map(type => (
                 <td>Centro comercial Moctezuma</td>
               ))}
             </tr>
