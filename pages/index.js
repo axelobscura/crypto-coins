@@ -23,7 +23,14 @@ export default function Home() {
     setEmail(email);
     let phone = e.target[2].value;
     setPhone(phone);
-  }
+    router.push({
+      pathname: '/dashboard',
+      query: {
+        firstname: firstname,
+        lastname: lastname
+      }
+    });
+  };
 
   console.log(firstname);
 
