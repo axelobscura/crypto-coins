@@ -49,7 +49,7 @@ export default function Home() {
             <p>Email:</p>
             <input type="email" name="email" required />
             <p>Phone Number:</p>
-            <input type="text" name="lastName" required />
+            <input type="number" name="lastName" required />
             <hr/>
             <button type="submit">SUBMIT</button>
           </form>
