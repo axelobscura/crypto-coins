@@ -15,8 +15,6 @@ export default function Dashboard(props) {
     )
   };
   
-  console.log(props.data);
-
   return (
     <Layout>
       <div className={styles.container}>
