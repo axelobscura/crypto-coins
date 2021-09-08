@@ -144,6 +144,10 @@
   text-align: center;
 }
 
+.dash {
+  width: 90%;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

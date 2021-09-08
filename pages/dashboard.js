@@ -5,13 +5,34 @@ import styles from '../styles/Home.module.css';
 
 export default function Dashboard(props) {
 
-  console.log(props);
+  if(!props){
+    return(
+      <div>
+        <p>
+          Loading
+        </p>
+      </div>
+    )
+  };
 
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={styles.login}>
+        <div className={styles.dash}>
           <h2>DASHBOARD</h2>
+          <hr/>
+          <table style={{'width':'90%'}}>
+            <tr>
+              <th>BTC</th>
+              <th>ETH</th>
+              <th>XRP</th>
+            </tr>
+            <tr>
+              {props.map(type => (
+                <td>Centro comercial Moctezuma</td>
+              ))}
+            </tr>
+          </table>
         </div>
       </div>
     </Layout>
